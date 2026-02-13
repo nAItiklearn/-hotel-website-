@@ -1,0 +1,529 @@
+.content-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--cream-bg);
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Introduction Section */
+.intro-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.content-text-block {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.section-description {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    max-width: 60ch;
+    margin: 0 auto;
+}
+
+/* Collage Gallery Section - Asymmetrical Layout */
+.collage-section {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    background-color: var(--cream-light);
+}
+
+.collage-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.collage-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.collage-item.large {
+    grid-row: span 2;
+    height: 700px;
+}
+
+.collage-item.medium {
+    height: 340px;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.collage-item:hover img {
+    transform: scale(1.05);
+}
+
+.collage-text-overlay {
+    position: absolute;
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
+    background: rgba(249, 248, 246, 0.95);
+    padding: var(--spacing-xl);
+    max-width: 320px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.collage-text-overlay h3 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-sm);
+}
+
+.collage-text-overlay p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+/* Content Flex Layout */
+.content-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xxl);
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.content-flex.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.content-flex.reverse .content-image {
+    order: 2;
+}
+
+.content-flex.reverse .content-text {
+    order: 1;
+}
+
+.content-image {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.content-image:hover img {
+    transform: scale(1.03);
+}
+
+.content-text {
+    padding: var(--spacing-xl);
+}
+
+.label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--warm-gold);
+    display: block;
+    margin-bottom: var(--spacing-lg);
+}
+
+.content-text h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.3;
+}
+
+.content-text p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.text-link {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--forest-green);
+    display: inline-block;
+    margin-top: var(--spacing-md);
+    transition: transform 0.3s ease;
+}
+
+.text-link:hover {
+    transform: translateX(5px);
+}
+
+/* Rooms & Dining Sections */
+.rooms-section {
+    background-color: var(--cream-bg);
+    padding: var(--spacing-xl) 0;
+}
+
+.dining-section {
+    background-color: var(--cream-light);
+    padding: var(--spacing-xl) 0;
+}
+
+/* Wellness Section */
+.wellness-section {
+    background-color: var(--cream-dark);
+    padding: var(--spacing-xl) 0;
+}
+
+.wellness-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: var(--spacing-xxl);
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.wellness-image {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+}
+
+.wellness-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wellness-text {
+    padding: var(--spacing-xl);
+}
+
+/* Special Offers Section */
+.offers-section {
+    background-color: var(--cream-bg);
+    padding: var(--spacing-xl) 0;
+}
+
+.section-header-center {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.offer-card {
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.offer-image {
+    height: 350px;
+    overflow: hidden;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.offer-card:hover .offer-image img {
+    transform: scale(1.08);
+}
+
+.offer-content {
+    padding: var(--spacing-xl);
+}
+
+.offer-content h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.offer-content p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    min-height: 80px;
+}
+
+.offer-price {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--warm-gold);
+    font-weight: 500;
+    display: block;
+    margin-top: var(--spacing-md);
+}
+
+/* About Hotel Section */
+.about-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--cream-light);
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--spacing-xl);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    align-items: center;
+}
+
+.about-image-large {
+    height: 700px;
+    overflow: hidden;
+}
+
+.about-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content {
+    padding: var(--spacing-lg);
+}
+
+.about-content h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 400;
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.2;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feature-item {
+    text-align: center;
+    padding: var(--spacing-sm);
+}
+
+.feature-item h4 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--warm-gold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-item p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0;
+}
+
+/* Experience Gallery Section */
+.experience-gallery {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--cream-bg);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1400px;
+    margin: var(--spacing-lg) auto 0;
+    padding: 0 var(--spacing-lg);
+}
+
+.experience-item {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.experience-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.experience-item:hover img {
+    transform: scale(1.1);
+}
+
+.experience-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: var(--spacing-xl);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.experience-overlay h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    line-height: 1.3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .collage-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .collage-item.large {
+        height: 500px;
+    }
+
+    .content-flex,
+    .content-flex.reverse,
+    .wellness-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .content-flex.reverse .content-image,
+    .content-flex.reverse .content-text {
+        order: initial;
+    }
+
+    .content-image,
+    .wellness-image {
+        height: 450px;
+    }
+
+    .collage-text-overlay {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: var(--spacing-md);
+    }
+
+    .offers-grid,
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .about-image-large {
+        height: 500px;
+    }
+
+    .experience-item {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .content-image,
+    .wellness-image {
+        height: 350px;
+    }
+
+    .collage-item.large {
+        height: 350px;
+    }
+
+    .collage-item.medium {
+        height: 250px;
+    }
+
+    .offer-image,
+    .experience-item {
+        height: 300px;
+    }
+
+    .about-image-large {
+        height: 350px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .content-text,
+    .wellness-text,
+    .about-content {
+        padding: var(--spacing-lg);
+    }
+}
